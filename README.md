@@ -37,3 +37,26 @@ This is similar to list and is used to store multiple items in a single variable
 
 #### Example: 
 tuple_name = (1, 2, 3, 4, 5)
+
+## Dictionary
+This is an unordered and mutable Python container that stores mappings of unique keys to values
+
+### Attributes
+* Mutable: Can Be edited after initialization
+* Keys are Unique
+* keys are immutable
+
+#### Example: 
+dictionary_name = {"key1": value, "key2": value2}
+
+## Set
+A set is a collection which is unordered, unchangeable, and unindexed.
+
+### Attributes
+* immutable: Can not Be edited after initialization
+* Distinct: ommits repititions and has no duplicates
+* Unordered
+
+#### Example: 
+set_name = {value1, value2}
+
