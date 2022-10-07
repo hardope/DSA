@@ -71,8 +71,15 @@ End where element are added is called top and opposite end is called base
 * isEmpty: Check sif stack is empty 
 
 ### Implementation
-#### * List: Stack can be implemented using lists
+* List
+* Modules
+
+#### List: Stack can be implemented using lists
 * Push operation: list append function
 * pop operation: list pop function
+
+#### Modules
+ Collections Module(deque class)
+
 
 
