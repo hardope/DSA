@@ -79,7 +79,14 @@ End where element are added is called top and opposite end is called base
 * pop operation: list pop function
 
 #### Modules
- Collections Module(deque class)
+* Collections Module(deque class)
+deque class in collection module has the pop and append function ensbling use in the stack data type
 
+* Queue Module(Lifo Queue)
+- For push operation "put" method is used
+- For pop operation "get" method is used
+- isempty: isempty function
+- isfull: isfull function
+- Limit can be set bu putting the limit value in the parenthesis when initializing stack
 
-
+##### Caution if you try to pop from an empty stack you'll need to set a timeout parameter
