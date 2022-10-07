@@ -18,8 +18,8 @@
 This is a data structure in Python that is a mutable, or changeable, ordered sequence of elements.
 ### Attributes
 * Mutable: Can be changed or altered after initialization
-* Values are accessed by index
-* 0 Indexed: can be indexed to get values starting from 0
+* element are accessed by index
+* 0 Indexed: can be indexed to get element starting from 0
 * Lists are ordered
 * Dynamic: Grows and shrinks in effect to data added and deleted
 * Nested: list can be inside of lists
@@ -39,7 +39,7 @@ This is similar to list and is used to store multiple items in a single variable
 tuple_name = (1, 2, 3, 4, 5)
 
 ## Dictionary
-This is an unordered and mutable Python container that stores mappings of unique keys to values
+This is an unordered and mutable Python container that stores mappings of unique keys to element
 
 ### Attributes
 * Mutable: Can Be edited after initialization
@@ -59,4 +59,14 @@ A set is a collection which is unordered, unchangeable, and unindexed.
 
 #### Example: 
 set_name = {value1, value2}
+
+## Stack
+Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out)<br>
+End where element are added is called top and opposite end is called base
+
+### Operations
+* Push: adding element to the top of the stack
+* pop: removing element from top
+* peek or top: return the top element
+* isEmpty: Check sif stack is empty 
 

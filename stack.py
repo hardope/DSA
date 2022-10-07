@@ -1,5 +1,6 @@
-limits = 2000
-stack = []
+# implementation of stack using Lists
+
+# push function
 def push():
      if len(stack) >= limits:
           print("Stack Is Full.",end="\n")
@@ -8,14 +9,27 @@ def push():
           stack.append(element)
           print(stack, end="\n")
 
+# pop function
 def pop():
-     if not stack:
+     if isEmpty(stack):
           print("Stack Empty", end="\n")
      else:
           e = stack.pop()
           print(f"Removed {e}", end="\n")
           print(stack, end="\n")
 
+# is empty function
+def isEmpty(stack):
+     if len(stack) < 1:
+          return True
+     else:
+          return False
+# peek function
+def peek(stack):
+     print(stack[-1])
+
+limits = 2000
+stack = []
 limits = int(input("Set Limit: "))
 while True:
      action = input("Action: ")
@@ -23,7 +37,9 @@ while True:
           pop()
      elif action == "push":
           push()
-     elif action == "limit":
-          limit()
+     elif action == "peek":
+          peek(stack)
+     elif action == "exit":
+          break
      else:
           print("Invalid action.", end="\n")
