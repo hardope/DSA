@@ -70,3 +70,9 @@ End where element are added is called top and opposite end is called base
 * peek or top: return the top element
 * isEmpty: Check sif stack is empty 
 
+### Implementation
+#### * List: Stack can be implemented using lists
+* Push operation: list append function
+* pop operation: list pop function
+
+
