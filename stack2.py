@@ -9,17 +9,16 @@ def push():
      else:
           element = input("Enter Eement: ")
           stack.put(element)
-          print(stack, end="\n")
           
 
 # pop function
 def pop():
      if stack.empty():
-          print("Stack is EMpty.")
+          print("Stack is Empty.")
      else:
           e = stack.get()
           print(f"Removed {e}", end="\n")
-          print(stack, end="\n")
+          print(list(stack.queue))
 
 
 limits = 2000

@@ -83,10 +83,18 @@ End where element are added is called top and opposite end is called base
 deque class in collection module has the pop and append function ensbling use in the stack data type
 
 * Queue Module(Lifo Queue)
-- For push operation "put" method is used
-- For pop operation "get" method is used
-- isempty: isempty function
-- isfull: isfull function
-- Limit can be set bu putting the limit value in the parenthesis when initializing stack
+     - For push operation "put" method is used
+     - For pop operation "get" method is used
+     - isempty: isempty function
+     - isfull: isfull function
+     - Limit can be set bu putting the limit value in the parenthesis when initializing stack
 
 ##### Caution if you try to pop from an empty stack you'll need to set a timeout parameter
+
+## Queue
+This is a linear data structure that is open at both ends and the operations are performed in First In First Out (FIFO) last in last out(LILO) order. Elements are added at one end(rear, back or tail) and removed from the opposite(head, front) end.
+
+### Attributes
+* LILO or FIFO
+* enque: Adding element to queue
+* deque: Removing element from queue
