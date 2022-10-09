@@ -74,13 +74,13 @@ End where element are added is called top and opposite end is called base
 * List
 * Modules
 
-#### List: Stack can be implemented using lists
+#### Implementing Stack using lists
 * Push operation: list append function
 * pop operation: list pop function
 
-#### Modules
+#### Implementing Stack using Modules
 * Collections Module(deque class)
-deque class in collection module has the pop and append function ensbling use in the stack data type
+deque class in collection module has the pop and append function enabling use in the stack data type
 
 * Queue Module(Lifo Queue)
      - For push operation "put" method is used
@@ -98,3 +98,20 @@ This is a linear data structure that is open at both ends and the operations are
 * LILO or FIFO
 * enque: Adding element to queue
 * deque: Removing element from queue
+* isFull: If queue is full
+* IsEmpty: If queue is empty
+
+### Implementation
+* Lists
+* Modules
+
+#### Implementation of queue Using Lists
+* Inserting from Right side of list and removing from left side
+     * enqueue: append function
+     * dequeue: pop function using 0 index
+
+* Inserting Left side and removing from right side of list
+     * enqueue: insert ti zero index
+     * dequeue: pop with no ararguments
+
+
