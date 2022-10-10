@@ -114,4 +114,31 @@ This is a linear data structure that is open at both ends and the operations are
      * enqueue: insert ti zero index
      * dequeue: pop with no ararguments
 
+#### Implementation of queue Using Modules
+
+* dequeue (double ended queue): Collection Module
+     * Inserting from Right and removing from left side
+          * enqueue: append function
+          * dequeue: popleft function
+     * Inserting from left and removing from right side
+          * enqueue: appendleft function
+          * dequeue: pop function
+
+* queue: Queue Module
+     * enqueue: put function
+     * dequeue: get function
+
+## Priority Queue
+
+They is a modified versoin of the queue data structure in which each element is associated with a priority, and elements are removed according to their priority and if elements have the same priority they are removed according to their position in the queue.
+
+### Setting Priority to values in the queue
+* Elements can be assigned to priorities by collecting values in tuples storing the value and its priority
+* Value of elements could also signify its priority
+
+### Implementation of Priority Queue
+* Lists and Tuples
+* Priority Queue class(Queue Module)
+
+
 
