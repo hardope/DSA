@@ -140,5 +140,31 @@ They is a modified versoin of the queue data structure in which each element is 
 * Lists and Tuples
 * Priority Queue class(Queue Module)
 
+## Linked List
 
+Linked List is a dynamic linear Data structure made of chain of nodes in which each node contains a data field and a link or reference to the next node.<br> Sometimes the node contains two links or references, one for the previous node and one for the next. Number of links in each node depends on the type of linked list.<br>
+The link or reference on the last node depends on the type of linked list but for most of the types, The last node link value contains the adress to the empty value or Null.<br>
 
+Nodes of the linked list is stored randomly in memory and not (contegiously) one after the other ike normal lists.
+
+### Terms associated with Linked List
+
+* Node: Each element in the linked list.
+* Head or Front: Start point of linked list.
+* Tail or End: Last Node.
+* Data: Data field.
+
+### Advantages
+* Dynamic Memory Allocation: No need to specify size.
+* Elements are inserted and deleted easily: No need to shift elements, Just change adresses.
+* They can be used to implement stacks, queue and graphs.
+* Used to represent and manipulate polynomials
+
+### Disadvantages
+* Requires more nemory to store adresses
+* No elements can be assed randomly, each have to be passed
+
+### Types of Linked Lists
+* Singly Linked List: Node contains only one Link.
+* Doubly Linked List: Node contains two Links.
+* Circular Linked List: 
