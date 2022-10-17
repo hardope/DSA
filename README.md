@@ -217,7 +217,6 @@ Each Node in the singly linked list contains a data field and a link to the next
 * Move to node one step before before node to be deleted
 * Change link field of current node to the address of node after node to be deleted
 
-
 ## Traversing The Linked List
 This is going through all nodes in a linked list
 

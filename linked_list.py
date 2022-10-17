@@ -97,6 +97,7 @@ class LinkedList:
           else:
                self.head = self.head.ref
 
+     # Delete from end of linked list
      def del_end(self):
           if self.head == None:
                print("Linked is Empty")
@@ -106,6 +107,7 @@ class LinkedList:
                     node = node.ref
                node.ref = None
 
+     # Delete before a specific node
      def del_before(self, x):
           if self.head == None:
                print("Linked is Empty")
@@ -120,6 +122,7 @@ class LinkedList:
                else:
                     node.ref = node.ref.ref
      
+     # Delete after a specific Node
      def del_after(self, x):
           if self.head == None:
                print("Linked is Empty")
@@ -132,7 +135,6 @@ class LinkedList:
                if node == None:
                     print("Node Not Found")
                else:
-                    print(node.data)
                     node.ref = node.ref.ref
           
      
@@ -144,15 +146,17 @@ class LinkedList:
 
 ll1 = LinkedList()
 
+# Add or delete Elements
 ll1.add_empty(1)
 ll1.add_begin(0)
 ll1.add_after(2, 1)
 ll1.add_end(4)
 ll1.add_before(3, 4)
-#ll1.del_begin()
-#ll1.del_end()
-#ll1.del_before(4)
-ll1.del_after(2)
+ll1.add_end(5)
+ll1.del_begin()
+ll1.del_end()
+ll1.del_before(4)
+ll1.del_after(1)
 
 
 
