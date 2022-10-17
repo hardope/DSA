@@ -101,6 +101,8 @@ class LinkedList:
      def del_end(self):
           if self.head == None:
                print("Linked is Empty")
+          elif self.head.ref == None:
+               self.head = None
           else:
                node = self.head
                while node.ref.ref is not None:
@@ -136,7 +138,25 @@ class LinkedList:
                     print("Node Not Found")
                else:
                     node.ref = node.ref.ref
-          
+
+     # delete specific node using value of data field     
+     def del_node(self, data):
+          if self.head == None:
+               print("Linked is Empty")
+
+          elif self.head.data == data:
+               self.head = self.head.ref
+          else:
+               node = self.head
+               while node.ref is not None:
+                    if node.ref.data == data:
+                         break
+                    node = node.ref
+               if node == None:
+                    print("Node Not Found")
+               else:
+                    node.ref = node.ref.ref
+
      
 
                
@@ -148,15 +168,17 @@ ll1 = LinkedList()
 
 # Add or delete Elements
 ll1.add_empty(1)
-ll1.add_begin(0)
-ll1.add_after(2, 1)
-ll1.add_end(4)
-ll1.add_before(3, 4)
+#ll1.add_begin(0)
+#ll1.add_after(2, 1)
+#ll1.add_end(4)
+#ll1.add_before(3, 4)
 ll1.add_end(5)
-ll1.del_begin()
-ll1.del_end()
-ll1.del_before(4)
-ll1.del_after(1)
+#ll1.del_begin()
+#ll1.del_end()
+#ll1.del_before(4)
+#ll1.del_after(1)
+ll1.del_node(1)
+#ll1.del_node(2)
 
 
 
