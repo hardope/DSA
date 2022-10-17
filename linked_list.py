@@ -45,26 +45,50 @@ class LinkedList:
                     node = node.ref
                node.ref = new_node
 
-     def add_mid(self, data, pos, x):
-          # pos parameter: to determine where to add new node aither before or after
+     def add_before(self, data, x):
           # x parameter: The value of the selected reference node
-          new_node = Node(data)
-          if pos == 0:
-               # add before
-               pass
-          
+          if self.head == None:
+               # if linked list is empty
+               print("Lined List Is empty")
+               return
+          if x == self.head.data:
+               # if add position falls on start point
+               add_begin(data)
+               return
           else:
-               # add after
+               new_node = Node(data)
                node = self.head
-               while node is not None:
-                    if node.data == x:
+               while node.ref is not None:
+                    if node.ref.data == x:
                          break
                     node = node.ref
                if node == None:
                     print("Node Not Found")
-               else:
-                    new_node.ref = node.ref
-                    node.ref = new_node
+               
+               new_node.ref = node.ref
+               node.ref = new_node
+               
+               
+     def add_after(self, data, x):
+          # add after
+          new_node = Node(data)
+          node = self.head
+          while node is not None:
+               if node.data == x:
+                    break
+               node = node.ref
+          if node == None:
+               print("Node Not Found")
+          else:
+               new_node.ref = node.ref
+               node.ref = new_node
+
+     def add_empty(self, data):
+          if self.head != None:
+               print("Linked List Not Empty")
+          else:
+               new_node = Node(data)
+               self.head = new_node
 
      
 
@@ -74,22 +98,13 @@ class LinkedList:
 # Initialize linked list using class
 
 ll1 = LinkedList()
-ll1.add_mid(2, 1, 25)
 
-# add data to list
-ll1.add_begin(10)
-ll1.add_end(20)
-ll1.add_end(30)
-ll1.add_end(40)
-ll1.add_end(10)
+ll1.add_empty(1)
+ll1.add_begin(0)
+ll1.add_after(2, 1)
+ll1.add_end(4)
+ll1.add_before(3, 4)
 
-ll1.add_mid(1, 1, 40)
-ll1.add_mid(2, 1, 20)
-
-# Test node not found
-ll1.add_mid(2, 1, 25)
-ll1.add_mid(2, 1, 40)
-ll1.add_mid(8, 1, 10)
 
 # Print List
 ll1.print_ll()
