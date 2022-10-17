@@ -90,6 +90,27 @@ class LinkedList:
                new_node = Node(data)
                self.head = new_node
 
+     # Delete from beginning
+     def del_begin(self):
+          if self.head == None:
+               print("Linked is Empty")
+          else:
+               self.head = self.head.ref
+
+     def del_end(self):
+          if self.head == None:
+               print("Linked is Empty")
+          else:
+               node = self.head
+               while node.ref.ref is not None:
+                    node = node.ref
+               node.ref = None
+
+     def del_before(self, data):
+          if self.head == None:
+               print("Linked is Empty")
+          else:
+          
      
 
                
@@ -104,6 +125,8 @@ ll1.add_begin(0)
 ll1.add_after(2, 1)
 ll1.add_end(4)
 ll1.add_before(3, 4)
+ll1.del_begin()
+ll1.del_end()
 
 
 # Print List
