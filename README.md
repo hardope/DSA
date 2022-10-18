@@ -234,3 +234,8 @@ This is going through all nodes in a linked list
 * move to current end of list
 * Change the next value of the last node to adress of new node
 * Set the previous reference of new_node to address of current last node
+
+#### Adding node to empty linked list
+* Create New node
+* Set self.head to new node
+
