@@ -225,3 +225,6 @@ This is going through all nodes in a linked list
 ### Insertion Of Nodes
 
 #### Adding nodes at start of linked list
+* Create Node
+* Set self.head prev reference to new_node
+* Change next reference of new_node to self.head
