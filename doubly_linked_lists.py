@@ -73,9 +73,8 @@ class LinkedList:
 
      def del_end(self):
           node = self.head
-          while node.next is not None:
+          while node.next.next is not None:
                node = node.next
-          node = node.prev
           node.next = None
 
      def del_node(self, data):
@@ -97,7 +96,7 @@ ll1.add_end(4)
 ll1.add_end(5)
 ll1.del_begin()
 ll1.del_end()
-ll1.del_node(3)
+#ll1.del_node(3)
 
 ll1.print_ll()
 ll1.print_back()

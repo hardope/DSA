@@ -143,7 +143,7 @@ They is a modified versoin of the queue data structure in which each element is 
 ## Linked List
 
 Linked List is a dynamic linear Data structure made of chain of nodes in which each node contains a data field and a link or reference to the next node.<br> Sometimes the node contains two links or references, one for the previous node and one for the next. Number of links in each node depends on the type of linked list.<br>
-The link or reference on the last node depends on the type of linked list but for most of the types, The last node link value contains the address to the empty value or Null.<br>
+The link or reference on the last node depends on the type of linked list but for most of the types, The last node link value contains the address to the empty value or None.<br>
 
 Nodes of the linked list is stored randomly in memory and not (contegiously) one after the other ike normal lists.
 
@@ -171,7 +171,7 @@ Nodes of the linked list is stored randomly in memory and not (contegiously) one
 
 ## Singly Linked List
 
-Each Node in the singly linked list contains a data field and a link to the next node, while the last node link field contains a null value.
+Each Node in the singly linked list contains a data field and a link to the next node, while the last node link field contains a None value.
 
 #### Disadvantages
 * Nearly Impossible to move backwards
@@ -193,7 +193,7 @@ Each Node in the singly linked list contains a data field and a link to the next
 
 #### Steps for inserting to end of Linked list
 * Create Node
-* Set link field of new node to null
+* Set link field of new node to None
 * Copy address of new node to last node link address
 
 #### Steps for inserting inbetween Linked list
@@ -211,7 +211,7 @@ Each Node in the singly linked list contains a data field and a link to the next
 * Change Head to second Node
 
 #### Steps For deleting nodes from End of linked list
-* Change the link field of the second to the last node to null
+* Change the link field of the second to the last node to None
 
 #### Steps For deleting nodes from middle of linked list
 * Move to node one step before before node to be deleted
@@ -239,3 +239,10 @@ This is going through all nodes in a linked list
 * Create New node
 * Set self.head to new node
 
+#### Delete node from start of linked list
+* Set self.head to node after self.head
+* Set the previous reference of new head to None
+
+#### Delete node from end of linked list
+* Move to Second to Last Node in list
+* Change current node next reference to None
