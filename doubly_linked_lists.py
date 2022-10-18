@@ -67,11 +67,37 @@ class LinkedList:
                node.next = new_node
                new_node.prev = node
 
+     def del_begin(self):
+          self.head = self.head.next
+          self.head.prev = None
+
+     def del_end(self):
+          node = self.head
+          while node.next is not None:
+               node = node.next
+          node = node.prev
+          node.next = None
+
+     def del_node(self, data):
+          node = self.head
+          while node.next is not None:
+               if node.next.data == data:
+                    break
+               node = node.next
+          node.next = node.next.next
+          node.next.next.prev = node.next
+          #print(node.data)
+
 ll1 = LinkedList()
 ll1.add_empty(1)
 ll1.add_begin(0)
 ll1.add_end(2)
-
+ll1.add_end(3)
+ll1.add_end(4)
+ll1.add_end(5)
+ll1.del_begin()
+ll1.del_end()
+ll1.del_node(3)
 
 ll1.print_ll()
 ll1.print_back()

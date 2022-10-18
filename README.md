@@ -228,3 +228,9 @@ This is going through all nodes in a linked list
 * Create Node
 * Set self.head prev reference to new_node
 * Change next reference of new_node to self.head
+
+#### Adding nodes at End of linked list
+* Create Node
+* move to current end of list
+* Change the next value of the last node to adress of new node
+* Set the previous reference of new_node to address of current last node
