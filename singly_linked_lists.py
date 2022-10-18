@@ -4,7 +4,7 @@ class Node:
      # function to initialize or create node
      def __init__(self, data):
           self.data = data
-          self.ref = None
+          self.next = None
 
 class LinkedList:
      # Initialize or create empty Linked list
@@ -19,17 +19,17 @@ class LinkedList:
                node = self.head
                print("[", end="")
                while node is not None:
-                    if node.ref is not None:
+                    if node.next is not None:
                          print(node.data, end=", ")
                     else:
                          print(node.data, end="")
-                    node = node.ref
+                    node = node.next
                print("]")
 
      # Method to Insert Node at start Of linked List
      def add_begin(self, data):
           new_node = Node(data)
-          new_node.ref = self.head
+          new_node.next = self.head
           self.head = new_node
 
      # Method to insert Node at end of Linked List
@@ -37,16 +37,16 @@ class LinkedList:
           new_node = Node(data)
           # Check if list is empty: If empty add as first node
           if self.head is None:
-               new_node.ref = self.head
+               new_node.next = self.head
                self.head = new_node
           else:
                node = self.head
-               while node.ref is not None:
-                    node = node.ref
-               node.ref = new_node
+               while node.next is not None:
+                    node = node.next
+               node.next = new_node
 
      def add_before(self, data, x):
-          # x parameter: The value of the selected reference node
+          # x parameter: The value of the selected nexterence node
           if self.head == None:
                # if linked list is empty
                print("Lined List Is empty")
@@ -58,15 +58,15 @@ class LinkedList:
           else:
                new_node = Node(data)
                node = self.head
-               while node.ref is not None:
-                    if node.ref.data == x:
+               while node.next is not None:
+                    if node.next.data == x:
                          break
-                    node = node.ref
+                    node = node.next
                if node == None:
                     print("Node Not Found")
                
-               new_node.ref = node.ref
-               node.ref = new_node
+               new_node.next = node.next
+               node.next = new_node
                
                
      def add_after(self, data, x):
@@ -76,12 +76,12 @@ class LinkedList:
           while node is not None:
                if node.data == x:
                     break
-               node = node.ref
+               node = node.next
           if node == None:
                print("Node Not Found")
           else:
-               new_node.ref = node.ref
-               node.ref = new_node
+               new_node.next = node.next
+               node.next = new_node
 
      def add_empty(self, data):
           if self.head != None:
@@ -95,19 +95,19 @@ class LinkedList:
           if self.head == None:
                print("Linked is Empty")
           else:
-               self.head = self.head.ref
+               self.head = self.head.next
 
      # Delete from end of linked list
      def del_end(self):
           if self.head == None:
                print("Linked is Empty")
-          elif self.head.ref == None:
+          elif self.head.next == None:
                self.head = None
           else:
                node = self.head
-               while node.ref.ref is not None:
-                    node = node.ref
-               node.ref = None
+               while node.next.next is not None:
+                    node = node.next
+               node.next = None
 
      # Delete before a specific node
      def del_before(self, x):
@@ -115,14 +115,14 @@ class LinkedList:
                print("Linked is Empty")
           else:
                node = self.head
-               while node.ref is not None:
-                    if node.ref.ref.data == x:
+               while node.next is not None:
+                    if node.next.next.data == x:
                          break
-                    node = node.ref
+                    node = node.next
                if node == None:
                     print("Node Not Found")
                else:
-                    node.ref = node.ref.ref
+                    node.next = node.next.next
      
      # Delete after a specific Node
      def del_after(self, x):
@@ -130,14 +130,14 @@ class LinkedList:
                print("Linked is Empty")
           else:
                node = self.head
-               while node.ref is not None:
+               while node.next is not None:
                     if node.data == x:
                          break
-                    node = node.ref
+                    node = node.next
                if node == None:
                     print("Node Not Found")
                else:
-                    node.ref = node.ref.ref
+                    node.next = node.next.next
 
      # delete specific node using value of data field     
      def del_node(self, data):
@@ -145,17 +145,17 @@ class LinkedList:
                print("Linked is Empty")
 
           elif self.head.data == data:
-               self.head = self.head.ref
+               self.head = self.head.next
           else:
                node = self.head
-               while node.ref is not None:
-                    if node.ref.data == data:
+               while node.next is not None:
+                    if node.next.data == data:
                          break
-                    node = node.ref
-               if node == None:
+                    node = node.next
+               if node.next == None:
                     print("Node Not Found")
                else:
-                    node.ref = node.ref.ref
+                    node.next = node.next.next
 
      
 
