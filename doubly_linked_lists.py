@@ -50,10 +50,15 @@ class LinkedList:
           self.head.prev = new_node
           self.head = new_node
 
+     # Add to empty list
      def add_empty(self, data):
-          new_node = Node(data)
-          self.head = new_node
+          if self.head is None:
+               new_node = Node(data)
+               self.head = new_node
+          else:
+               print("Linked List is not Empty")
 
+     # Add to end of list
      def add_end(self, data):
           new_node = Node(data)
           # Check if list is empty: If empty add as first node
@@ -66,6 +71,24 @@ class LinkedList:
                     node = node.next
                node.next = new_node
                new_node.prev = node
+     def add_after(self, data, x):
+          if self.head is None:
+               print("Linked List Is empty.")
+          else:
+               node = self.head
+               while node.next is not None:
+                    if node.data == x:
+                         break
+                    node = node.next
+               if node is None:
+                    print("Node is Not pressent in list")
+               else:
+                    new_node = Node(data)
+                    new_node.next = node.next
+                    new_node.prev = node
+                    if node.next is not None:
+                         node.next.prev = new_node
+                    node.next = new_node
 
      def del_begin(self):
           self.head = self.head.next
@@ -85,7 +108,6 @@ class LinkedList:
                node = node.next
           node.next = node.next.next
           node.next.next.prev = node.next
-          #print(node.data)
 
 ll1 = LinkedList()
 ll1.add_empty(1)
@@ -96,6 +118,7 @@ ll1.add_end(4)
 ll1.add_end(5)
 ll1.del_begin()
 ll1.del_end()
+ll1.add_after(10, 3)
 #ll1.del_node(3)
 
 ll1.print_ll()
