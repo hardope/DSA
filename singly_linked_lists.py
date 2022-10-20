@@ -53,7 +53,7 @@ class LinkedList:
                return
           if x == self.head.data:
                # if add position falls on start point
-               add_begin(data)
+               self.add_begin(data)
                return
           else:
                new_node = Node(data)
@@ -179,6 +179,7 @@ ll1.add_end(5)
 #ll1.del_after(1)
 ll1.del_node(1)
 #ll1.del_node(2)
+ll1.add_before(0, 5)
 
 
 

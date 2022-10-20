@@ -81,7 +81,7 @@ class LinkedList:
                          break
                     node = node.next
                if node is None:
-                    print("Node is Not pressent in list")
+                    print("Node is Not present in list")
                else:
                     new_node = Node(data)
                     new_node.next = node.next
@@ -89,6 +89,27 @@ class LinkedList:
                     if node.next is not None:
                          node.next.prev = new_node
                     node.next = new_node
+
+     def add_before(self, data, x):
+          if self.head is None:
+               print("Linked List Is empty.")
+          else:
+               node = self.head
+               while node is not None:
+                    if node.data == x:
+                         break
+                    node = node.next
+               if node is None:
+                    print("Node is Not present in list")
+               else:
+                    new_node = Node(data)
+                    new_node.next = node
+                    new_node.prev = node.prev
+                    if node.prev is not None:
+                         node.prev.next = new_node
+                    else:
+                         self.head = new_node
+                    node.prev = new_node
 
      def del_begin(self):
           self.head = self.head.next
@@ -119,6 +140,9 @@ ll1.add_end(5)
 ll1.del_begin()
 ll1.del_end()
 ll1.add_after(10, 3)
+ll1.add_before(8, 1)
+ll1.add_before(1, 9)
+ll1.add_before(9, 2)
 #ll1.del_node(3)
 
 ll1.print_ll()
