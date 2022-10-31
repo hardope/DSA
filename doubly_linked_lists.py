@@ -46,9 +46,12 @@ class LinkedList:
      # Method to Insert Node at start Of linked List
      def add_begin(self, data):
           new_node = Node(data)
-          new_node.next = self.head
-          self.head.prev = new_node
-          self.head = new_node
+          if self.head is None:
+               self.head = new_node
+          else:
+               new_node.next = self.head
+               self.head.prev = new_node
+               self.head = new_node
 
      # Add to empty list
      def add_empty(self, data):
@@ -63,7 +66,6 @@ class LinkedList:
           new_node = Node(data)
           # Check if list is empty: If empty add as first node
           if self.head is None:
-               new_node.next = self.head
                self.head = new_node
           else:
                node = self.head
@@ -112,16 +114,27 @@ class LinkedList:
                     node.prev = new_node
 
      def del_begin(self):
+          if self.head is None:
+               print("Linked List is empty.")
+               return
           self.head = self.head.next
           self.head.prev = None
 
      def del_end(self):
+          if self.head is None:
+               print("Linked List is empty.")
+               return
           node = self.head
           while node.next.next is not None:
                node = node.next
           node.next = None
 
      def del_node(self, data):
+          if self.head is None:
+               print("Linked List is empty.")
+               return
+          if self.head.data == x:
+               self.head = None
           node = self.head
           while node.next is not None:
                if node.next.data == data:

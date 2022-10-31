@@ -246,3 +246,7 @@ This is going through all nodes in a linked list
 #### Delete node from end of linked list
 * Move to Second to Last Node in list
 * Change current node next reference to None
+
+## Circular Linked Lists
+The circular linked list is a linked list where all nodes are connected to form a circle.<br>
+In circular linked lists the last node of the linked list contains the address of the first node. 
