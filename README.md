@@ -249,4 +249,18 @@ This is going through all nodes in a linked list
 
 ## Circular Linked Lists
 The circular linked list is a linked list where all nodes are connected to form a circle.<br>
-In circular linked lists the last node of the linked list contains the address of the first node. 
+In circular linked lists the last node of the linked list contains the address of the first node.<br>
+There are tyo types of circular linked lists:
+* Circular Singly Linked Lists
+* Circular Double linked Lists
+
+### Advantages of Circular Linked lists
+* You can start to traverse from any point in the linked list
+
+### Disadvantages Of Circular Linked Lists
+* Since it contains no null value, if proper caution is not taken it may lead to an infinite loop
+
+### Operations of circular linked lists
+* Insertion: Add nodes
+* Deletion : Remove nodes
+* Traversal: Loop through all the nodes present in the linked list
