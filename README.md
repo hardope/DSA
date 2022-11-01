@@ -264,3 +264,23 @@ There are tyo types of circular linked lists:
 * Insertion: Add nodes
 * Deletion : Remove nodes
 * Traversal: Loop through all the nodes present in the linked list
+
+#### Insert Node to empty Lined lists
+* Create Node
+* Set reference of new node points to itself
+* set head to new node
+
+#### Insert node at start of linked List
+* Create New node 
+* Set reference field of the new node to the head
+* set reference of last node to the new node
+
+#### Insert node at end of linked List
+* Create New node 
+* Set reference field of the last node to the new node
+* set reference of new node to the head
+
+#### Insert node at middle of linked List
+* Create New node 
+* Set reference field of the last node to the new node
+* set reference of new node to the head
