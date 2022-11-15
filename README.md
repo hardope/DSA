@@ -339,3 +339,9 @@ Nodes that belong to the same parents are sibling nodes<br>
 
 #### Leaf, External or Terminal Nodes:
 This are nodes that that have no children.
+
+#### Internal Nodes:
+This are nodes with at least one child
+
+#### Path:
+The sequence of nodes and edges from one node to another node is known as path
