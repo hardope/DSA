@@ -373,6 +373,13 @@ This is the number of edges from root node to partcular node
 * General Tree: There is no limitation for number of children for each node.
 * Binary tree: Every node have a maximum of two children.
 
+### Types of Binary trees
+* Full Binary tree
+* Complete Binary Tree
+* Perfect Binary Tree
+* Balanced Banary Tree
+* pathological Binary Tree
+
 ### Applications of Tree Data structure
 * Binary Search trees are used for quick search algorihims
 * Heap is used for heap sort
