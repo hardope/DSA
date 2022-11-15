@@ -311,10 +311,12 @@ There are tyo types of circular linked lists:
 #### Features
 * Data items are Traversed Serially and all items are traversed in a single run
 * Organised Linearly or sequentially
+* Easier to implement
+* Only one level depth
 
 ### Non-Linear Data Structure
 * Trees 
 * Graphs
 
-#### Featues
+#### Features
 * Not Organised Linerly or sequentially
