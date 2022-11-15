@@ -346,6 +346,18 @@ This are nodes with at least one child
 #### Path:
 The sequence of nodes and edges from one node to another node is known as path
 
+#### Degree of a node
+This is the total number of children of the node
+
+#### Degree of a Tree:
+The node with the highest degree is the degree of the whole tree
+
+#### Level of the Tree:
+This is the amount of generations in the tre
+
+#### Height of Node:
+This is the total number of edges that lies on the longest path from any leaf node to a particular node
+
 ### Characterisics of Trees
 * The root node can be used to traverse the tree and every non empty tree has a root
 * If a tree contains N nodes, The number of edges or links is N-1.
