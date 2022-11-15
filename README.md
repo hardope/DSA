@@ -284,3 +284,9 @@ There are tyo types of circular linked lists:
 * Create New node 
 * Set reference field of the last node to the new node
 * set reference of new node to the head
+
+
+#### Delete Node from Start from Start of Linked List
+* Point head to second Node
+* Set last node reference field to second node
+
