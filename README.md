@@ -320,3 +320,8 @@ There are tyo types of circular linked lists:
 
 #### Features
 * Not Organised Linerly or sequentially
+
+## Trees
+A tree is a non-linear data structure that represent relationships between nodes
+
+A tree is a collection of nodes connected by edges and may or may not have children
