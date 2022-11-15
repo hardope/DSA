@@ -381,7 +381,10 @@ This is the number of edges from root node to partcular node
 * pathological Binary Tree
 
 #### Full Binary tree:
-This is a type of binary in which a node has exactly zero or two children.
+This is a type of binary in which a node has exactly zero or two children. They are also called strict Binary Tree.
+
+#### Complete Binary tree
+This is a type of binary tree where all levels except last level are completely filled with nodes and all nodes on bottom level are completely filled or filled from left to right.
 
 ### Applications of Tree Data structure
 * Binary Search trees are used for quick search algorihims
