@@ -369,6 +369,10 @@ This is the number of edges from root node to partcular node
 * Every child node can have only one parent but every parent can have multiple children
 * Trees are recursive, A tree contains smaller trees called sub-trees
 
+### Types Of trees
+* General Tree: There is no limitation for number of children for each node.
+* Binary tree: Every node have a maximum of two children.
+
 ### Applications of Tree Data structure
 * Binary Search trees are used for quick search algorihims
 * Heap is used for heap sort
