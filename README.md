@@ -357,6 +357,10 @@ This is the amount of generations in the tre
 
 #### Height of Node:
 This is the total number of edges that lies on the longest path from any leaf node to a particular node
+* Height of tree is the height of the root node
+
+#### Depth
+This is the number of edges from root node to partcular node
 
 ### Characterisics of Trees
 * The root node can be used to traverse the tree and every non empty tree has a root
