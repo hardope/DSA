@@ -380,6 +380,9 @@ This is the number of edges from root node to partcular node
 * Balanced Banary Tree
 * pathological Binary Tree
 
+#### Full Binary tree:
+This is a type of binary in which a node has exactly zero or two children.
+
 ### Applications of Tree Data structure
 * Binary Search trees are used for quick search algorihims
 * Heap is used for heap sort
