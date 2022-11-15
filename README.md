@@ -290,3 +290,6 @@ There are tyo types of circular linked lists:
 * Point head to second Node
 * Set last node reference field to second node
 
+#### Delete Node from end of linked list
+* Traverse to second to last node
+* Set Reference to the head
