@@ -345,3 +345,9 @@ This are nodes with at least one child
 
 #### Path:
 The sequence of nodes and edges from one node to another node is known as path
+
+### Characterisics of Trees
+* The root node can be used to traverse the tree and every non empty tree has a root
+* If a tree contains N nodes, The number of edges or links is N-1.
+* Every child node can have only one parent but every parent can have multiple children
+* Trees are recursive, A tree contains smaller trees called sub-trees
