@@ -361,6 +361,7 @@ This is the total number of edges that lies on the longest path from any leaf no
 
 #### Depth
 This is the number of edges from root node to partcular node
+* Depth of tree is the total edges in longest path from root node to leaf node
 
 ### Characterisics of Trees
 * The root node can be used to traverse the tree and every non empty tree has a root
