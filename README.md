@@ -326,4 +326,16 @@ A tree is a non-linear data structure that represent relationships between nodes
 
 A tree is a collection of nodes connected by edges and may or may not have children<br>
 
-A node contains Data and sometimes contains link to other nodes called children
+#### Root:
+The top most node of the tree is the root, It is the origin of the tree. There is only one root in a tree<br>
+
+#### Parent Node:
+is a node that has a branch to another node<br>
+#### Child:
+This is a node that was branched from a another node, every node except the roots are child nodes.<br>
+
+#### Siblings:
+Nodes that belong to the same parents are sibling nodes<br>
+
+#### Leaf, External or Terminal Nodes:
+This are nodes that that have no children.
