@@ -368,3 +368,7 @@ This is the number of edges from root node to partcular node
 * If a tree contains N nodes, The number of edges or links is N-1.
 * Every child node can have only one parent but every parent can have multiple children
 * Trees are recursive, A tree contains smaller trees called sub-trees
+
+### Applications of Tree Data structure
+* Binary Search trees are used for quick search algorihims
+* Heap is used for heap sort
