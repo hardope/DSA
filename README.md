@@ -293,3 +293,7 @@ There are tyo types of circular linked lists:
 #### Delete Node from end of linked list
 * Traverse to second to last node
 * Set Reference to the head
+
+#### Delete node by value
+* Traverse to node before the required node
+* Set reference to reference next node
