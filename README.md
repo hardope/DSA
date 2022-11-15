@@ -299,3 +299,6 @@ There are tyo types of circular linked lists:
 * Set reference to reference next node
 
 ## Traverse Circular linked List
+* Start from next node of last node
+* Print data and go to next node and continue until ref equals head
+
