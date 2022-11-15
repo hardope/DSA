@@ -303,3 +303,18 @@ There are tyo types of circular linked lists:
 * Print data and go to next node and continue until ref equals head
 
 ## Linear and Non-Linear Data Structure
+### Linear Structure
+* Stack
+* Queue
+* Linked-Lists
+
+#### Features
+* Data items are Traversed Serially and all items are traversed in a single run
+* Organised Linearly or sequentially
+
+### Non-Linear Data Structure
+* Trees 
+* Graphs
+
+#### Featues
+* Not Organised Linerly or sequentially
