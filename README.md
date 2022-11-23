@@ -392,6 +392,12 @@ This a binary tree where all internal nodes have two children and the leaf nodes
 #### Balanced Binary Tree
 This is a binary tree where hieght of the left and right sub-trees of every node may differ by at most 1
 
+### Binary Search Tree
+This a special type of Binary Tree with particular features Listed Below
+* The left sub tree of a node contains only nodes with keys lesser than node's key
+* The right sub tree of a node contains only nodes with keys greater than node's key
+* The left and right sub tree must also be Binary Search Trees
+
 ### Applications of Tree Data structure
 * Binary Search trees are used for quick search algorihims
 * Heap is used for heap sort
