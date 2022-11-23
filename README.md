@@ -386,6 +386,12 @@ This is a type of binary in which a node has exactly zero or two children. They 
 #### Complete Binary tree
 This is a type of binary tree where all levels except last level are completely filled with nodes and all nodes on bottom level are completely filled or filled from left to right.
 
+#### Perfect Binary Tree
+This a binary tree where all internal nodes have two children and the leaf nodes are all in same level
+
+#### Balanced Binary Tree
+This is a binary tree where hieght of the left and right sub-trees of every node may differ by at most 1
+
 ### Applications of Tree Data structure
 * Binary Search trees are used for quick search algorihims
 * Heap is used for heap sort
