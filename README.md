@@ -302,6 +302,9 @@ There are tyo types of circular linked lists:
 * Start from next node of last node
 * Print data and go to next node and continue until ref equals head
 
+# Tortise and Hare Algorithm
+This is used to find a node n position from the end of a linled list
+
 ## Linear and Non-Linear Data Structure
 ### Linear Structure
 * Stack
